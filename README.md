@@ -15,7 +15,7 @@ Becomes Calm Slack:
 Add the module via `go mod`:
 
 ```
-go get <TODO: module name here!>
+go get github.com/slackhq/deanimator
 ```
 
 ## Usage
@@ -24,9 +24,9 @@ When using the module, make sure to import / register the deanimation libraries 
 
 ```
 import (
-    _ "<package>/png"
-    _ "<package>/gif"
-    _ "<package>/webp"
+    _ "github.com/slackhq/deanimator/gif"
+	_ "github.com/slackhq/deanimator/png"
+	_ "github.com/slackhq/deanimator/webp"
 )
 
-TODO: link to go pkg docs when published
+More information can be found in the [Go package documentation](https://pkg.go.dev/github.com/slackhq/deanimator#section-documentation).
