@@ -28,5 +28,6 @@ import (
 	_ "github.com/slackhq/deanimator/png"
 	_ "github.com/slackhq/deanimator/webp"
 )
+```
 
 More information can be found in the [Go package documentation](https://pkg.go.dev/github.com/slackhq/deanimator#section-documentation).
