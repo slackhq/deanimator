@@ -24,8 +24,11 @@ When using the module, make sure to import / register the deanimation libraries 
 
 ```
 import (
+	// Animated GIF image support
 	_ "github.com/slackhq/deanimator/gif"
+	// Animated PNG image support
 	_ "github.com/slackhq/deanimator/png"
+	// Animated WebP image support
 	_ "github.com/slackhq/deanimator/webp"
 )
 ```
