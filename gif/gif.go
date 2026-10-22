@@ -10,10 +10,10 @@ import (
 	"github.com/slackhq/deanimator/window"
 )
 
-//DecodeFunc lets you override the gif parser decode func. This implementation is our own
-//since the default in the std lib parses all frames even if only returning the first one.
-//once the std library is updated, this could be changed to be the default. See:
-//https://github.com/golang/go/pull/46813
+// DecodeFunc lets you override the gif parser decode func. This implementation is our own
+// since the default in the std lib parses all frames even if only returning the first one.
+// once the std library is updated, this could be changed to be the default. See:
+// https://github.com/golang/go/pull/46813
 var DecodeFunc = parser.Decode
 
 func RenderFirstFrame(r io.Reader, w io.Writer) error {

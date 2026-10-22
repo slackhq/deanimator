@@ -26,7 +26,7 @@ var (
 	iendChunk    = []byte{0, 0, 0, 0, 'I', 'E', 'N', 'D', 0xAE, 0x42, 0x60, 0x82}
 )
 
-//DecodeFunc lets you override the built-in PNG package decode if desired.
+// DecodeFunc lets you override the built-in PNG package decode if desired.
 var DecodeFunc = gopng.Decode
 
 // References:
