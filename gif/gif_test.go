@@ -2,6 +2,7 @@ package gif
 
 import (
 	"bytes"
+	gopng "image/png"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -80,7 +81,7 @@ func TestRenderFirstFrame(t *testing.T) {
 				t.Fatal(err)
 			}
 
-			goldentest.Equals(t, test.file+"_golden.gif", w.Bytes())
+			goldentest.EqualsImage(t, test.file+"_golden.gif", w.Bytes(), gopng.Decode)
 		})
 	}
 }
